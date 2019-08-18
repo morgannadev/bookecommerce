@@ -6,10 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Livro\" />
-    <Folder Include="Cliente\" />
-    <Folder Include="Endereco\" />
     <Folder Include="FormaPagamento\" />
-    <Folder Include="Geral\" />
     <Folder Include="Venda\" />
   </ItemGroup>
 
