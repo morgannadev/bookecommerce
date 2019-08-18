@@ -1,4 +1,5 @@
 ﻿using BookEcommerceDominio.Geral;
+using BookEcommerceDominio.Log;
 
 namespace BookEcommerceDominio.Livro
 {
@@ -6,5 +7,6 @@ namespace BookEcommerceDominio.Livro
     {
         public StatusLivro Status { get; set; }
         public string Justificativa { get; set; }
+        public ControleLog Log { get; set; }
     }
 }

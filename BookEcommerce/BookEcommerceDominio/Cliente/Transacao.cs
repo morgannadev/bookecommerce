@@ -1,4 +1,5 @@
 ﻿using BookEcommerceDominio.Geral;
+using BookEcommerceDominio.Log;
 
 namespace BookEcommerceDominio.Cliente
 {
@@ -6,5 +7,6 @@ namespace BookEcommerceDominio.Cliente
     {
         public string DescricaoTransacao { get; set; }
         public CategoriaTransacao Categoria { get; set; }
+        public ControleLog Log { get; set; }
     }
 }

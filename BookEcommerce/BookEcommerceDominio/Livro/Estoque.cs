@@ -1,4 +1,5 @@
 ﻿using BookEcommerceDominio.Geral;
+using BookEcommerceDominio.Log;
 using System.Collections.Generic;
 
 namespace BookEcommerceDominio.Livro
@@ -7,5 +8,6 @@ namespace BookEcommerceDominio.Livro
     {
         public int Quantidade { get; set; }
         public IEnumerable<Livro> Livros { get; set; }
+        public ControleLog Log { get; set; }
     }
 }
