@@ -1,4 +1,5 @@
 ﻿using BookEcommerceDominio.Endereco;
+using BookEcommerceDominio.FormaPagto;
 using BookEcommerceDominio.Geral;
 using System;
 using System.Collections.Generic;
@@ -17,5 +18,8 @@ namespace BookEcommerceDominio.Cliente
         public IEnumerable<EnderecoCobranca> EnderecosCobranca { get; set; }
         public IEnumerable<EnderecoEntrega> EnderecosEntrega { get; set; }
         public IEnumerable<Telefone> Telefones { get; set; }
+        public IEnumerable<CartaoCredito> CartoesCredito { get; set; }
+        public IEnumerable<CupomTroca> CuponsTroca { get; set; }
+        public IEnumerable<CupomPromocional> CuponsPromocionais { get; set; }
     }
 }
