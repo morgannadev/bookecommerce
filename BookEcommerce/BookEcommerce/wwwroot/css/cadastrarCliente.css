@@ -9,8 +9,41 @@
 .inputCadastro {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0 0 20px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.checkboxCadastro {
+    margin: 0 0 20px 5px;
+    display: inline-block;   
+}
+
+.textoEfetuarCadastro {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textoTitulo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.textoSubtitulo {
+    font-size: large;
+    font-weight: bold;
+}
+
+.grupoCadastro {
+    padding-bottom: 40px;
+}
+
+.grupoEndereco {
+    padding-bottom: 20px;
+}
+
+.grupoCartaoCredito {
+    padding-bottom: 20px;
 }
