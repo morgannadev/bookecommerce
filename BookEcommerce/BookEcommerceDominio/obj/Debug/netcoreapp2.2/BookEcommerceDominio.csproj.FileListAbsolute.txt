@@ -1,0 +1,9 @@
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\bin\Debug\netcoreapp2.2\BookEcommerceDominio.deps.json
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\bin\Debug\netcoreapp2.2\BookEcommerceDominio.dll
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\bin\Debug\netcoreapp2.2\BookEcommerceDominio.pdb
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\obj\Debug\netcoreapp2.2\BookEcommerceDominio.csprojResolveAssemblyReference.cache
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\obj\Debug\netcoreapp2.2\BookEcommerceDominio.csproj.CoreCompileInputs.cache
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\obj\Debug\netcoreapp2.2\BookEcommerceDominio.AssemblyInfoInputs.cache
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\obj\Debug\netcoreapp2.2\BookEcommerceDominio.AssemblyInfo.cs
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\obj\Debug\netcoreapp2.2\BookEcommerceDominio.dll
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerceDominio\obj\Debug\netcoreapp2.2\BookEcommerceDominio.pdb

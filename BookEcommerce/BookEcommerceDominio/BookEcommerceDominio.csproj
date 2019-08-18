@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Livro\" />
+    <Folder Include="Cliente\" />
+    <Folder Include="Endereco\" />
+    <Folder Include="FormaPagamento\" />
+    <Folder Include="Geral\" />
+    <Folder Include="Venda\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<form action="/" method="post">
+    <div class="containerLogin">
+        <div>
+            <label class="textoEfetuarLogin">Efetuar Login</label>
+        </div>
+        <div>
+            <label for="uname" class="textoLogin">Usuário</label>
+            <input class="inputLogin" type="text" placeholder="Digite seu usuário" name="uname" required>
+        </div>
+
+        <div>
+            <label for="psw" class="textoLogin">Senha</label>
+            <input class="inputLogin" type="password" placeholder="Digite sua senha" name="psw" required>
+        </div>
+
+        <button class="buttonLogin" type="submit">Login</button>
+
+        <div>
+            <label>Não possui usuário? <a href="">Cadastre-se</a>.</label>
+        </div>
+    </div>
+</form>

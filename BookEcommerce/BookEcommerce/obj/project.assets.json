@@ -12097,11 +12097,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Morganna Giovanelli\\source\\repos\\BookEcommerce\\BookEcommerce\\BookEcommerce.csproj",
+      "projectUniqueName": "C:\\Users\\Morganna Giovanelli\\source\\repos\\les2019\\bookecommerce\\BookEcommerce\\BookEcommerce\\BookEcommerce.csproj",
       "projectName": "BookEcommerce",
-      "projectPath": "C:\\Users\\Morganna Giovanelli\\source\\repos\\BookEcommerce\\BookEcommerce\\BookEcommerce.csproj",
+      "projectPath": "C:\\Users\\Morganna Giovanelli\\source\\repos\\les2019\\bookecommerce\\BookEcommerce\\BookEcommerce\\BookEcommerce.csproj",
       "packagesPath": "C:\\Users\\Morganna Giovanelli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Morganna Giovanelli\\source\\repos\\BookEcommerce\\BookEcommerce\\obj\\",
+      "outputPath": "C:\\Users\\Morganna Giovanelli\\source\\repos\\les2019\\bookecommerce\\BookEcommerce\\BookEcommerce\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
