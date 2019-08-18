@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<form action="/" method="post">
+    <div class="containerCadastrar">
+        <div>
+            <label class="textoEfetuarLogin">Efetuar Cadastro</label>
+        </div>
+
+        <div>
+            <label for="nomecliente" class="textoCadastro">Nome Completo</label>
+            <input class="inputCadastro" type="text" placeholder="Digite seu nome" name="nomecliente" required>
+        </div>
+
+        <div>
+            <label for="cpfcliente" class="textoCadastro">CPF</label>
+            <input class="inputCadastro" type="text" placeholder="Digite seu CPF" name="cpfcliente" required>
+        </div>
+
+        <div>
+            <label for="datanascimentocliente" class="textoCadastro">Data de Nascimento</label>
+            <input class="inputCadastro" type="text" placeholder="Digite sua data de nascimento" name="datanascimentocliente" required>
+        </div>
+
+
+        <button class="buttonLogin" type="submit">Salvar</button>
+    </div>
+</form>
