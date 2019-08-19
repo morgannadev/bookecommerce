@@ -1,0 +1,381 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<form action="/" method="post">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Cadastro Dados Pessoais
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="grupoCadastro">
+                        <div>
+                            <label class="textoTitulo">Dados Pessoais</label>
+                        </div>
+                        <div>
+                            <label for="nomecliente" class="textoCadastro">Nome Completo</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="text" placeholder="Digite seu nome" name="nomecliente" required>
+                        </div>
+                        <div>
+                            <label for="datanascimentocliente" class="textoCadastro">Data de Nascimento</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="text" placeholder="Digite sua data de nascimento" name="datanascimentocliente" required>
+                        </div>
+                        <div>
+                            <label for="cpfcliente" class="textoCadastro">CPF</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="text" placeholder="Digite seu CPF" name="cpfcliente" required>
+                        </div>
+                        <div>
+                            <label for="emailcliente" class="textoCadastro">E-mail</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="email" placeholder="Digite seu E-mail" name="emailcliente" required>
+                        </div>
+                        <div>
+                            <label for="tipotelefonecliente" class="textoCadastro">Tipo de Telefone</label><span aria-hidden="true"> *</span>
+                            <select class="inputCadastro" name="selecttipotelefone">
+                                <option value="Selecione">Selecione um tipo de telefone</option>
+                                <option value="Celular">Celular</option>
+                                <option value="Residencial">Residencial</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="telefonecliente" class="textoCadastro">Telefone</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="tel" placeholder="Digite seu Telefone" name="telefonecliente" required>
+                        </div>
+                        <div>
+                            <label for="generocliente" class="textoCadastro">Gênero</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="text" placeholder="Digite seu gênero" name="generocliente" list="generos" autocomplete="on" required />
+                            <datalist id="generos">
+                                <option value="Feminino"></option>
+                                <option value="Masculino"></option>
+                                <option value="Transgênero"></option>
+                                <option value="Outro"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Cadastro Usuário
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    @*Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.*@
+                    <div class="grupoCadastro">
+                        <div>
+                            <label class="textoTitulo">Cadastre seu usuário</label>
+                        </div>
+                        <div>
+                            <label for="usuariocliente" class="textoCadastro">Usuário</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="text" placeholder="Digite seu Usuário" name="usuariocliente" required>
+                        </div>
+                        <div>
+                            <label for="senhacliente" class="textoCadastro">Senha</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="password" placeholder="Digite sua Senha" name="senhacliente" required>
+                        </div>
+                        <div>
+                            <label for="senhacliente" class="textoCadastro">Digite novamente sua senha</label><span aria-hidden="true"> *</span>
+                            <input class="inputCadastro" type="password" placeholder="Digite novamente sua Senha" name="senhacliente" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Cadastro de Endereços
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="grupoCadastro">
+                        <div>
+                            <label class="textoTitulo">Cadastre seus endereços</label>
+                        </div>
+                        <div class="grupoEndereco">
+                            <div>
+                                <label for="enderecocobranca" class="textoSubtitulo">Endereço de Entrega</label>
+                            </div>
+                            <div>
+                                <label for="nomeenderecoentrega" class="textoCadastro">Nome do Endereço</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite um nome para identificar este endereço" name="nomeendereco" required>
+                            </div>
+                            <div>
+                                <label for="tiporesidencia" class="textoCadastro">Tipo de Residência</label><span aria-hidden="true"> *</span>
+                                <select class="inputCadastro" name="selecttiporesidencia">
+                                    <option value="Selecione">Selecione um tipo de residência</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Comercial">Comercial</option>
+                                    <option value="Edificio">Edifício</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="tipologradouro" class="textoCadastro">Tipo de Logradouro</label><span aria-hidden="true"> *</span>
+                                <select class="inputCadastro" name="selecttipologradouro">
+                                    <option value="Selecione">Selecione um logradouro</option>
+                                    <option value="Alameda">Alameda</option>
+                                    <option value="Area">Área</option>
+                                    <option value="Avenida">Avenida</option>
+                                    <option value="Campo">Campo</option>
+                                    <option value="Chacara">Chácara</option>
+                                    <option value="Condominio">Condomínio</option>
+                                    <option value="Estrada">Estrada</option>
+                                    <option value="Favela">Favela</option>
+                                    <option value="Fazenda">Fazenda</option>
+                                    <option value="Largo">Largo</option>
+                                    <option value="Loteamento">Loteamento</option>
+                                    <option value="Parque">Parque</option>
+                                    <option value="Passarela">Passarela</option>
+                                    <option value="Quadra">Quadra</option>
+                                    <option value="Recanto">Recanto</option>
+                                    <option value="Rodovia">Rodovia</option>
+                                    <option value="Rua">Rua</option>
+                                    <option value="Setor">Setor</option>
+                                    <option value="Sitio">Sítio</option>
+                                    <option value="Travessa">Travessa</option>
+                                    <option value="Viaduto">Viaduto</option>
+                                    <option value="Viela">Viela</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="logradouro" class="textoCadastro">Logradouro</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o logradouro" name="logradouro" required>
+                            </div>
+                            <div>
+                                <label for="numero" class="textoCadastro">Número</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o número" name="número" required>
+                            </div>
+                            <div>
+                                <label for="cep" class="textoCadastro">CEP</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o CEP" name="cep" required>
+                            </div>
+                            <div>
+                                <label for="bairro" class="textoCadastro">Bairro</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o bairro" name="bairro" required>
+                            </div>
+                            <div>
+                                <label for="cidade" class="textoCadastro">Cidade</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite a cidade" name="cidade" required>
+                            </div>
+                            <div>
+                                <label for="siglaestado" class="textoCadastro">Estado</label><span aria-hidden="true"> *</span>
+                                <select class="inputCadastro" name="selectsiglaestado">
+                                    <option value="Selecione">Selecione um estado</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AM">AM</option>
+                                    <option value="AP">AP</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="PR">PR</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RR">RR</option>
+                                    <option value="RS">RS</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SE">SE</option>
+                                    <option value="SP">SP</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="pais" class="textoCadastro">País</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o país" name="pais" required>
+                            </div>
+                            <div>
+                                <label for="observacoes" class="textoCadastro">Observações</label>
+                                <textarea class="inputCadastro" rows="2" placeholder="Digite as observações" name="observacoes"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="grupoEndereco">
+                            <div>
+                                <label for="enderecocobranca" class="textoSubtitulo">Endereço de Cobrança</label>
+                            </div>
+                            <div>
+                                <label for="nomeenderecoentrega" class="textoCadastro">Nome do Endereço</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite um nome para identificar este endereço" name="nomeendereco" required>
+                            </div>
+                            <div>
+                                <label for="tiporesidencia" class="textoCadastro">Tipo de Residência</label><span aria-hidden="true"> *</span>
+                                <select class="inputCadastro" name="selecttiporesidencia">
+                                    <option value="Selecione">Selecione um tipo de residência</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Comercial">Comercial</option>
+                                    <option value="Edificio">Edifício</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="tipologradouro" class="textoCadastro">Tipo de Logradouro</label><span aria-hidden="true"> *</span>
+                                <select class="inputCadastro" name="selecttipologradouro">
+                                    <option value="Selecione">Selecione um logradouro</option>
+                                    <option value="Alameda">Alameda</option>
+                                    <option value="Area">Área</option>
+                                    <option value="Avenida">Avenida</option>
+                                    <option value="Campo">Campo</option>
+                                    <option value="Chacara">Chácara</option>
+                                    <option value="Condominio">Condomínio</option>
+                                    <option value="Estrada">Estrada</option>
+                                    <option value="Favela">Favela</option>
+                                    <option value="Fazenda">Fazenda</option>
+                                    <option value="Largo">Largo</option>
+                                    <option value="Loteamento">Loteamento</option>
+                                    <option value="Parque">Parque</option>
+                                    <option value="Passarela">Passarela</option>
+                                    <option value="Quadra">Quadra</option>
+                                    <option value="Recanto">Recanto</option>
+                                    <option value="Rodovia">Rodovia</option>
+                                    <option value="Rua">Rua</option>
+                                    <option value="Setor">Setor</option>
+                                    <option value="Sitio">Sítio</option>
+                                    <option value="Travessa">Travessa</option>
+                                    <option value="Viaduto">Viaduto</option>
+                                    <option value="Viela">Viela</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="logradouro" class="textoCadastro">Logradouro</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o logradouro" name="logradouro" required>
+                            </div>
+                            <div>
+                                <label for="numero" class="textoCadastro">Número</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o número" name="número" required>
+                            </div>
+                            <div>
+                                <label for="cep" class="textoCadastro">CEP</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o CEP" name="cep" required>
+                            </div>
+                            <div>
+                                <label for="bairro" class="textoCadastro">Bairro</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o bairro" name="bairro" required>
+                            </div>
+                            <div>
+                                <label for="cidade" class="textoCadastro">Cidade</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite a cidade" name="cidade" required>
+                            </div>
+                            <div>
+                                <label for="siglaestado" class="textoCadastro">Estado</label><span aria-hidden="true"> *</span>
+                                <select class="inputCadastro" name="selectsiglaestado">
+                                    <option value="Selecione">Selecione um estado</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AM">AM</option>
+                                    <option value="AP">AP</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="PR">PR</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RR">RR</option>
+                                    <option value="RS">RS</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SE">SE</option>
+                                    <option value="SP">SP</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="pais" class="textoCadastro">País</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o país" name="pais" required>
+                            </div>
+                            <div>
+                                <label for="observacoes" class="textoCadastro">Observações</label>
+                                <textarea class="inputCadastro" rows="2" placeholder="Digite as observações" name="observacoes"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Cadastro de Cartões
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="grupoCadastro">
+                        <div>
+                            <label class="textoTitulo">Dados Pagamento</label>
+                        </div>
+                        <div class="grupoCartaoCredito">
+                            <div>
+                                <label for="cartaocredito" class="textoSubtitulo">Cartão de Crédito</label>
+                            </div>
+                            <div>
+                                <label for="cartaopreferencial" class="textoCadastro">Preferencial</label><span aria-hidden="true"> *</span>
+                                <input class="checkboxCadastro" id="ispreferencial" type="checkbox" name="cartaopreferencial">
+                            </div>
+                            <div>
+                                <label for="numerocartao" class="textoCadastro">Número do Cartão de Crédito</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o número do Cartão de Crédito" name="numerocartao" required>
+                            </div>
+                            <div>
+                                <label for="nomeimpresso" class="textoCadastro">Nome impresso no Cartão de Crédito</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="text" placeholder="Digite o nome impresso no Cartão de Crédito" name="nomeimpresso" required>
+                            </div>
+                            <div>
+                                <label for="codigoseguranca" class="textoCadastro">Código de Seguranca</label><span aria-hidden="true"> *</span>
+                                <input class="inputCadastro" type="password" placeholder="Digite o código de segurança do Cartão de Crédito" name="codigoseguranca" required>
+                            </div>
+                            <div>
+                                <label for="bandeira" class="textoCadastro">Bandeira</label><span aria-hidden="true"> *</span>
+                                <select class="inputCadastro" name="selectbandeira">
+                                    <option value="Selecione">Selecione uma bandeira</option>
+                                    <option value="Mastercard">Mastercard</option>
+                                    <option value="Visa">Visa</option>
+                                    <option value="Elo">Elo</option>
+                                    <option value="Maestro">Maestro</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="buttonLogin" type="submit">Salvar</button>    
+</form>
