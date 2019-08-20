@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BookEcommerceCore.Core
 {
-    public interface IDao
+    public interface IDAO
     {
         void Salvar(EntidadeDominio entidade);
         void Alterar(EntidadeDominio entidade);
