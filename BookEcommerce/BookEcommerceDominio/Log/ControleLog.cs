@@ -1,11 +1,11 @@
-﻿using System;
+﻿using BookEcommerceDominio.Geral;
+using System;
 
 namespace BookEcommerceDominio.Log
 {
-    public class ControleLog
+    public class ControleLog : EntidadeDominio
     {
-        public DateTime DataOcorrido { get; set; }
-        public TimeSpan HoraOcorrido { get; set; }
+        public DateTime DataHoraOcorrido { get; set; }
         public Operacao Operacao { get; set; }
     }
 }
