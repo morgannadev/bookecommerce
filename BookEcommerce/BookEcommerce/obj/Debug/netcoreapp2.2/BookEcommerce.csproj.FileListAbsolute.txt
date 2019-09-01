@@ -66,3 +66,4 @@ C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\Bo
 C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerce\obj\Debug\netcoreapp2.2\BookEcommerce.dll
 C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerce\obj\Debug\netcoreapp2.2\BookEcommerce.pdb
 C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerce\obj\Debug\netcoreapp2.2\BookEcommerce.csproj.CopyComplete
+C:\Users\Morganna Giovanelli\source\repos\les2019\bookecommerce\BookEcommerce\BookEcommerce\obj\Debug\netcoreapp2.2\BookEcommerce.csprojResolveAssemblyReference.cache

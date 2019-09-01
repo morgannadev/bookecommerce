@@ -1,20 +1,34 @@
 ﻿using BookEcommerceCore.Aplicacao;
 using System.Data.SqlClient;
+using System.Data.Common;
 
 namespace BookEcommerceCore.Utils
 {
     public class ConexaoDB
     {
-        protected static Resultado resultado = new Resultado();        
+        protected static Resultado resultado = new Resultado();
+        protected static DbConnection dbConnection { get; set; }
+        protected DbTransaction dbTransaction { get; set; }
 
-        protected string connectionString = "Server=(localdb)\\mssqllocaldb;Database=BookEcommerceDB;Trusted_Connection=True;MultipleActiveResultSets=true";
-
-        public void teste()
+        public static DbConnection GetDbConnection()
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            dbConnection = new SqlConnection();
+
+            try
             {
-                connection.Open();
+                dbConnection.ConnectionString = "Server=(localdb)\\mssqllocaldb;Database=BookEcommerceDB;Trusted_Connection=True;MultipleActiveResultSets=true";
+                return dbConnection;
             }
+            catch (DbException ex)
+            {
+                resultado.Mensagem = ex.Message;
+                throw;
+            }
+        }
+
+        public static DbCommand GetDbCommand(DbConnection dbConnection)
+        {
+            return dbConnection.CreateCommand();
         }
     }
 }
